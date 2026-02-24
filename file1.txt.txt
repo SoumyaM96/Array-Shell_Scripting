@@ -1,0 +1,6 @@
+servers=("8.8.8.8" "1.1.1.1")
+
+for server in "${servers[@]}"
+do
+    ping -c 1 $server
+done
